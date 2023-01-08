@@ -86,8 +86,15 @@ body {
 }
 .contact-info ul li i {
   padding-right: 1rem;
-  font-size: 1.2rem;
+  padding-block: 0.3rem;
+  font-size: 1.6rem;
   color: #97dece;
+  transition: transform 0.3s;
+  cursor: pointer;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
 }
 
 .skills-section ul {
@@ -96,7 +103,7 @@ body {
 .skills-section ul li {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 0.4rem 0;
+  padding: 0.6rem 0;
 }
 
 .progress-bar {

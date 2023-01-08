@@ -32,27 +32,52 @@
           </div>
           <div class="contact-info">
             <h3 class="main-title">Contact Info</h3>
-            <ul>
+            <ul
+              onmouseover="clearTimeout(timeoutID)"
+              onmouseout="timeoutID = setTimeout(function() { mostrar('info-3'), mostrar('info-4'), mostrar('info-5') }, 500)"
+            >
               <li>
                 <i class="fa-solid fa-phone"></i>
-                +54 (3487) 4772-69
+                <span id="info-1"> +54 (3487) 4772-69 </span>
               </li>
               <li>
                 <i class="fa fa-fax"></i>
-                oscar_alhuay2001@hotmail.com
+                <span id="info-2"> oscar_alhuay2001@hotmail.com </span>
               </li>
-              <li>
-                <i class="fa-solid fa-computer"></i>
-                www.github.com/AlhuayOscar
+              <li onclick="window.open('https://github.com/AlhuayOscar')">
+                <i
+                  class="fa-solid fa-computer"
+                  onclick="window.open('https://github.com/AlhuayOscar')"
+                  onmouseout="mostrar('info-3')"
+                ></i>
+                <span id="info-3" onmouseover="ocultar('info-3')"
+                  >www.github.com/AlhuayOscar
+                </span>
               </li>
-              <li>
-                <i class="fa-brands fa-linkedin"></i>
-                https://www.linkedin.com/in/oscar-carlos-alhuay-ramirez-3a5b73196/
+              <li
+                onclick="window.open('https://www.linkedin.com/in/oscar-carlos-alhuay-ramirez-3a5b73196/')"
+              >
+                <i
+                  class="fa-brands fa-linkedin"
+                  onclick="window.open('https://www.linkedin.com/in/oscar-carlos-alhuay-ramirez-3a5b73196/')"
+                  onmouseout="mostrar('info-4')"
+                ></i>
+                <span id="info-4" onmouseover="ocultar('info-4')"
+                  >www.linkedin.com/in/oscar-carlos-alhuay-ramirez-3a5b73196/
+                </span>
               </li>
-              <li>
-                <i class="fa-solid fa-earth-americas"></i>
-                Campiña 1 - Juan Elhert 164 <br />Zárate, Buenos Aires,
-                Argentina
+              <li
+                onclick="window.open('https://goo.gl/maps/2x6eRpyKyNJVUUEMA')"
+              >
+                <i
+                  class="fa-solid fa-earth-americas"
+                  onclick="window.open('https://goo.gl/maps/2x6eRpyKyNJVUUEMA')"
+                  onmouseout="mostrar('info-5')"
+                ></i>
+                <span id="info-5" onmouseover="ocultar('info-5')">
+                  Campiña 1 - Juan Elhert 164 <br />Zárate, Buenos Aires,
+                  Argentina
+                </span>
               </li>
             </ul>
           </div>
@@ -234,6 +259,26 @@
           </section>
         </div>
       </section>
+      <script>
+        function ocultar(id) {
+          document.getElementById(id).style.display = "none";
+          document.getElementById(id).previousElementSibling.style.transform =
+            "translateX(105px) scale(1.55)";
+        }
+        function mostrar(id) {
+          var element = document.getElementById(id);
+          if (element.style.display === "none") {
+            setTimeout(function () {
+              element.style.display = "initial";
+            }, 750);
+          }
+          setTimeout(function () {
+            document.getElementById(id).style.display = "initial";
+            document.getElementById(id).previousElementSibling.style.transform =
+              "translateX(0) scale(1)";
+          }, 850);
+        }
+      </script>
     </main>
   </body>
 </html>
