@@ -5,11 +5,9 @@
   list-style: none;
   font-family: "Nunito", sans-serif;
 }
-
 body {
   background-color: #94d9ea;
 }
-
 .main-content {
   min-height: 100vh;
   width: 80%;
@@ -21,7 +19,7 @@ body {
 .left-section {
   grid-column: span 2;
   height: 100%;
-  background-color: #439A97;
+  background-color: #439a97;
 }
 .right-section {
   grid-column: span 5;
@@ -34,7 +32,7 @@ body {
 }
 .profile {
   width: 100%;
-  border-bottom: 1px solid #002333;
+  border-bottom: 4px solid #ccc;
 }
 
 .image {
@@ -61,7 +59,7 @@ body {
 
 .career {
   font-size: 1.2rem;
-  color: #CBEDD5;
+  color: #cbedd5;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -84,12 +82,12 @@ body {
   padding: 0.4rem 0;
   display: flex;
   align-items: center;
-  color: #CBEDD5;
+  color: #cbedd5;
 }
 .contact-info ul li i {
   padding-right: 1rem;
   font-size: 1.2rem;
-  color: #97DECE;
+  color: #97dece;
 }
 
 .skills-section ul {
@@ -112,26 +110,26 @@ body {
   height: 100%;
   position: absolute;
   left: 0;
-  background-color: #CBEDD5;
+  background-color: #cbedd5;
   border-radius: 12px;
 }
-.js-progress {
-  width: 70%;
-}
-.ps-progress {
+.ss-progress {
   width: 90%;
 }
-.j-progress {
+.s-progress {
   width: 85%;
+}
+.a-progress {
+  width: 63%;
+}
+.b-progress {
+  width: 55%;
 }
 .c-progress {
   width: 40%;
 }
-.n-progress {
-  width: 63%;
-}
-.w-progress {
-  width: 78%;
+.d-progress {
+  width: 30%;
 }
 
 .skill-title {
@@ -159,7 +157,7 @@ body {
 .references-section li i {
   padding-right: 0.5rem;
   font-size: 1.2rem;
-  color: #97DECE;
+  color: #97dece;
 }
 
 .right-main-content {
@@ -199,7 +197,7 @@ body {
 .timeline {
   display: grid;
   grid-template-columns: 220px min-content;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .tl-title {
@@ -220,7 +218,7 @@ body {
   padding-left: 2rem;
   position: relative;
   padding-bottom: 2rem;
-  width:500px
+  width: 500px;
 }
 
 .tl-title-2::before {
