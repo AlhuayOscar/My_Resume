@@ -96,6 +96,9 @@ body {
   -ms-transition: transform 0.3s;
   -o-transition: transform 0.3s;
 }
+.contact-info ul li i:hover {
+    color: #73eed1;
+}
 
 .skills-section ul {
   padding-top: 2rem;
@@ -174,7 +177,7 @@ body {
 .right-title {
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #2f80ed;
+  color: #537b71;
   margin-bottom: 1.2rem;
   position: relative;
 }
@@ -212,11 +215,16 @@ body {
   font-size: 1.3rem;
   color: #002333;
   text-transform: uppercase;
+  cursor: pointer;
+  
+}
+.tl-title:hover {
+    color: #006492;
 }
 .tl-title-2 {
   letter-spacing: 1px;
   font-size: 1.3rem;
-  color: #2d9cdb;
+  color: #97dece;
   text-transform: uppercase;
 }
 
